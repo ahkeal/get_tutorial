@@ -1,0 +1,5 @@
+git init
+git status
+echo "Hello, Git!" > hello.txt
+git add hello.txt
+git commit -m "Add hello.txt file"
