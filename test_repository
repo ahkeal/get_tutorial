@@ -3,3 +3,23 @@ git status
 echo "Hello, Git!" > hello.txt
 git add hello.txt
 git commit -m "Add hello.txt file"
+# Importing necessary libraries
+import pandas as pd
+
+# Step 1: Create a dictionary to simulate a dataset
+data = {
+    "Product": ["A", "B", "A", "C", "B", "A"],
+    "Sales": [100, 200, 150, 300, 250, 200]
+}
+
+# Step 2: Convert the dictionary into a pandas DataFrame
+df = pd.DataFrame(data)
+
+# Step 3: Group the data by the "Product" column and calculate the average sales for each product
+average_sales = df.groupby("Product")["Sales"].mean()
+
+# Step 4: Display the result
+print("Average Sales per Product:")
+print(average_sales)
+
+one_change = 12
